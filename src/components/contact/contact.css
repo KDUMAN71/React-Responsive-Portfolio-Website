@@ -1,0 +1,89 @@
+.c {
+  height: 100vh;
+  position: relative;
+}
+
+.c-bg {
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  background-color: blue;
+}
+
+.c-wrapper {
+  padding: 50px;
+  display: flex;
+}
+
+.c-left {
+  flex: 1;
+}
+
+.c-right {
+  flex: 1;
+}
+
+.c-title {
+  font-size: 60px;
+  width: 70%;
+}
+
+.c-info-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+  width: 70%;
+}
+
+.c-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+form {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 50%;
+  height: 50px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+textarea {
+  margin-bottom: 20px;
+}
+
+.f-btn {
+  padding: 15px;
+  width: 150px;
+  color: white;
+  background-color: blue;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .c-wrapper {
+    flex-direction: column;
+    padding: 10px 50px;
+  }
+
+  .c-title {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .c-info-item {
+    margin: 20px 0px;
+  }
+
+  .c-r-desc {
+    display: none;
+  }
+}
